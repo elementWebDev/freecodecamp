@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Basic Javascript</title>
+	<script src="basic.js"></script>
+	<style>
+		body {
+			background-color: #333;
+		}
+		h1, h2, h3, h4 {
+			color: green;
+		}
+		pre {
+			padding: 1.5em;
+			background-color: #222;
+			color: #c0c0c0;
+			border: 1px silver;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+	<body>
+<h3>Booleans</h3>
+<pre>
+	function testBoolean(val) {
+		if(val == 7) {
+			return "true";
+		}
+	}
+</pre>
+
+<h3>Greater Than</h3>
+<pre>
+	function testGreaterThan(val) {
+		if (val < 100) {  // Change this line
+			return "Over 100";
+		}
+		if (val < 10) {  // Change this line
+			return "Over 10";
+		}
+		return "10 or Under";
+	}
+	// Change this value to test
+	testGreaterThan(10);
+</pre>
+<h3>Introducing Else If Statements</h3>
+<pre>
+		function testElseIf(val) {
+		if (val > 10) {
+			return "Greater than 10";
+		} else if (val < 5) { // else if comes before else
+			return "Smaller than 5";
+		} else {
+			return "Between 5 and 10";
+		}
+	}
+
+	// Change this value to test
+	testElseIf(7);
+</pre>
+
+<h3>Logical Order in If Else Statements</h3>
+<pre>
+	function orderMyLogic(val) {
+		if (val < 5) {
+			return "Less than 5";
+		} else if (val < 10) {
+			return "Less than 10";
+		} else {
+			return "Greater than or equal to 10";
+		}
+	}
+
+	// Change this value to test
+	orderMyLogic(7);
+</pre>
+<h3>Chaining If Else Statements</h3>
+<pre>
+	function testSize(num) {
+		// Only change code below this line
+		if(num <= 4) {
+			return "Tiny";
+		} else if (num <= 9 ) {
+			return "Small";
+		} else if (num <= 14) {
+			return "Medium";
+		} else if (num <= 17){
+			return "Large";
+		} else{
+		return "Huge";
+		}             
+		// Only change code above this line
+	}
+
+	// Change this value to test
+	testSize(18);
+</pre>
+
+<h3>Golf Code</h3>
+<pre>
+	function golfScore(par, strokes) {
+		// Only change code below this line
+		if (strokes == 1) {
+			return "Hole-in-one!";
+		}
+		else if (strokes <= par - 2) {
+			return "Eagle";
+		}
+		else if (strokes == par - 1) {
+			return "Birdie";
+		}
+		else if (strokes == par) {
+			return "Par";
+		}
+		else if (strokes == par + 1) {
+			return "Bogey";
+		}
+		else if (strokes == par + 2) {
+			return "Double Bogey";
+		}else{
+		return "Go Home!";
+		}
+		// Only change code above this line
+	}
+
+	// Change these values to test
+	golfScore(5, 4);
+</pre>
+
+<h3>Selecting from many options with Switch Statements</h3>
+<pre>
+	function caseInSwitch(val) {
+		var answer = "";
+		// Only change code below this line
+		switch (val) {
+			case 1:
+				answer = "alpha";
+				break;
+			case 2:
+				answer = "beta";
+				break;
+			case 3:
+				answer = "gamma";
+				break;
+			case 4:
+				answer = "delta";
+				break;
+		}
+
+
+		// Only change code above this line  
+		return answer;  
+	}
+
+	// Change this value to test
+	caseInSwitch(1);
+</pre>
+
+<h3>Adding a default option in Switch statements</h3>
+<pre></pre>
+
+</body>
+</html>

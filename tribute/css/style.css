@@ -1,0 +1,17 @@
+body{
+  background-color: #000;
+}
+.well{
+  background-color: #103A57;
+}
+.light-text{
+  color: #aaa;
+}
+.light-background{
+  background-color: #bbb;
+  color: #ccc;
+}
+.quotes {
+  font-size: 36px;
+  color: #999;
+}
