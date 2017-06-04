@@ -15,6 +15,11 @@ a.navbar-brand {
 .wrapper {
   margin: 0 5%;
 }
+.intro {
+  margin-bottom: 60px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #999;
+}
 .about {
   margin: 0 auto;
   padding: 10%;
@@ -48,15 +53,32 @@ a.navbar-brand {
 .btn a:hover {
   color: #000;
 }
+
+a:hover {
+  text-decoration: none;
+}
+a.glyphicon-menu-hamburger {
+  color: #222;
+}
+pre {
+  /*margin-left: 25px;*/
+  background-color: #222;
+  color: #ccc;
+  max-width: 600px;
+}
+.lessons {
+  background-color: #333;
+}
+.solutions {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+#daily {
+  margin-top: 35px;
+}
 footer {
   padding: 1%;
   border: 1px solid #000;
   background-color: #23A341;
   background-size: cover;
-}
-a:hover {
-  text-decoration: none;
-}
-a.glyphicon-menu-hamburger {
-  color: #111;
 }
