@@ -53,7 +53,9 @@ a.navbar-brand {
 .btn a:hover {
   color: #000;
 }
-
+a {
+  color:#00D311
+}
 a:hover {
   text-decoration: none;
 }

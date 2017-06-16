@@ -33,25 +33,23 @@
   <div class="intro">
     <h1>Lessons <small>from</small> freeCodeCamp</h1>
     <h4>Notes &amp; Solutions</h4>
-    <p>This purpose of this page is to help other students by showing solutions to <a href="https://freecodecamp.com">freeCodeCamp</a> challenges as well as provide notation and implementation of features.</p>
-    <p>I may also document my personal journey in learning more as I go through the challenges, and projects to come.</p>
+    <h5>This is an evolving page</h5>
+    <p><em>meaning it is being edited on-the-fly. There may be changes the next time you refresh. Don't be alarmed.</em></p>
+    <p>This purpose of this page is to help other students by showing solutions to <a href="https://freecodecamp.com">freeCodeCamp</a> challenges as well as providing notation and implementation of features.</p>
+    <p>I am documenting my personal journey in learning more as I go through the challenges, and projects to come.</p>
     <p>Please Note:
       The newest lessons are at the bottom... I will be working on better nav as well.</p>
-    <!-- Daily -->
-    <div id="daily">
-      <h5>Friday, June 2, 2017</h5>
-      <p>First entry, but not first day of coding.</p>
-      <p>Working on the syntax and spacing has consumed a bit of my time today. I looked at <a href="https://freecodecamp.com">freeCodeCamp</a>'s website and realized they have the same sort of dropdowns I was looking for in their map to display answers. after peeking at their source code (don't worry... not cheating... see my source code) I noticed they used lists. So I then added all the ul li's and realized I needed to do some source formatting. On to more challenges... :)</p>
-    </div>
-  </div>
-  <!-- /.intro --> 
+    <h5>Hint: Click the titles below to show / hide solutions</h5>
+  </div><!-- /.intro -->
+  <div class="row">
+     
   
   <!-- 3 hours in challenges && 2 hours implementing answers -->
   
-  <div class="solutions">
+  <div class="solutions col-sm-6">
     <h4>Booleans</h4>
     <p>Booleans are either <kbd>true</kbd> or <kbd>false</kbd></p>
-    <div class="solution">
+    <div id="boolean" class="solution">
       <ul>
         <li>
           <pre>
@@ -169,26 +167,26 @@ testSize(18);
 <code>
 function golfScore(par, strokes) {
 // Only change code below this line
-if (strokes == 1) {
-return "Hole-in-one!";
-}
-else if (strokes &lt;= par - 2) {
-return "Eagle";
-}
-else if (strokes == par - 1) {
-return "Birdie";
-}
-else if (strokes == par) {
-return "Par";
-}
-else if (strokes == par + 1) {
-return "Bogey";
-}
-else if (strokes == par + 2) {
-return "Double Bogey";
-}else{
-return "Go Home!";
-}
+  if (strokes == 1) {
+    return "Hole-in-one!";
+  }
+  else if (strokes &lt;= par - 2) {
+    return "Eagle";
+  }
+  else if (strokes == par - 1) {
+    return "Birdie";
+  }
+  else if (strokes == par) {
+    return "Par";
+  }
+  else if (strokes == par + 1) {
+    return "Bogey";
+  }
+  else if (strokes == par + 2) {
+    return "Double Bogey";
+  } else {
+    return "Go Home!";
+  }
 // Only change code above this line
 }
 
@@ -276,25 +274,25 @@ switchOfStuff(3);
           <pre>
 <code>
 function sequentialSizes(val) {
-var answer = "";
-// Only change code below this line
-switch(val) {
-case 1:
-case 2:
-case 3:
-answer = "Low";
-break;
-case 4:
-case 5:
-case 6:
-answer = "Mid";
-break;
-case 7:
-case 8:
-case 9:
-answer = "High";
-break;
-}
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;
+  }
 
 
 // Only change code above this line  
@@ -315,26 +313,26 @@ sequentialSizes(1);
           <pre>
 <code>
 function chainToSwitch(val) {
-var answer = "";
+  var answer = "";
 // Only change code below this line
 
-switch (val) {
-case 1:
-answer = "There is no #1";
-break;
-case 7:
-answer = "Ate Nine";
-break;
-case 42:
-answer = "The Answer";
-break;
-case 99;
-answer = "Missed me by this much!";
-break;
-case "bob":
-answer = "Marley";
-break;
-}
+  switch (val) {
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 99;
+      answer = "Missed me by this much!";
+      break;
+    case "bob":
+      answer = "Marley";
+      break;
+  }
 
 /*
 if (val === "bob") {
@@ -612,7 +610,41 @@ myDog.bark = "yip-yip";
         </li>
       </ul>
     </div>
-    <h4>Title Here</h4>
+    <h4>Delete Properties from a JavaScript Object</h4>
+    <div class="solution">
+      <ul>
+        <li>
+          <pre>
+<code>
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line.
+
+delete myDog.tails;
+</code>
+          </pre>
+        </li>
+      </ul>
+    </div>
+    <h4>Using Objects for Lookups</h4>
     <div class="solution">
       <ul>
         <li>
@@ -624,12 +656,29 @@ myDog.bark = "yip-yip";
         </li>
       </ul>
     </div>
-    <a name="last"></a> </div>
-  <!-- /.solutions --> 
-</div>
-<!-- /.container-fluid -->
+    <a name="last"></a>
+  </div><!-- /.solutions --> 
+  <div id="daily" class="col-sm-6">
+    <div class="entry">
+    <h5>Friday, June 2, 2017</h5>
+    <p>First entry, but not first day of coding.</p>
+    <p>Working on the syntax and spacing has consumed a bit of my time today. I looked at <a href="https://freecodecamp.com">freeCodeCamp</a>'s website and realized they have the same sort of dropdowns I was looking for in their map to display answers. after peeking at their source code (don't worry... not cheating... see my source code) I noticed they used lists. So I then added all the ul li's and realized I needed to do some source formatting. On to more challenges... :)</p>
+    </div>
+    <div class="entry">
+    <h5>Sunday, June 4, 2017</h5>
+    <p><strong>Woo Hoo!</strong> Just figured out a solution to fix the problem that got me into programming in the first place.</p>
+    <p>Back in 2009, I tried running an eCommerce site selling billiard supplies. I just wanted to make money at something I liked to do. However, with over 4,000 products and product updates every 3-6 months I started to get overwhelmed. You see, every piece of a quality pool cue is made from a differant material, and the customers only want quality.</p>
+    <p>So basicly this left me with a lot of work...ending up in more than a million fields in a .csv table. I was creating an HTML table for each item with 34 seperate columns of description data... Here I am today thinking of a possible fix for the nightmare of a mess.</p>
+    </div>
+    
+    <div class="entry">
+    <h5>June 12, 2017</h5>
+    <p>I realized this is consuming more time than I had expected. I have many projects I work on, and have decided to work on my domain <a href="https://oregongreenhost.com">Oregon Green Host</a>, and prepare for a cheap hosting plan for students, which I'm sure many students could benefit from.</p>
+    </div>
+  </div><!-- /#daily -->
+</div><!-- /.container-fluid -->
 <footer class="text-center">
-  <p>Copyright &copy;2017 Element Web Development. All Rights Reserved.</p>
+  <p>Copyright &copy;2017 Ivan Huddleston. All Rights Reserved.</p>
 </footer>
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -644,5 +693,5 @@ $(document).ready(function(){
 });
 </script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+</div></body>
 </html>
